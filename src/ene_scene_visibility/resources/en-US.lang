@@ -4,46 +4,46 @@
     "entity_summary": {
       "group_component": "%{count} Groups/Components",
       "entities": "%{count} Entities",
-      "curve": "1 Curve",
+      "curve": "Curve",
       "no_selection": "No Selection",
       "ComponentInstance": {
-        "one": "%{count} Component",
+        "one": "Component",
         "other": "%{count} Components"
       },
       "ConstructionLine": {
-        "one": "%{count} Guide",
+        "one": "Guide",
         "other": "%{count} Guides"
       },
       "ConstructionPoint": {
-        "one": "%{count} Guide Point",
+        "one": "Guide Point",
         "other": "%{count} Guide Points"
       },
       "Dimension": {
-        "one": "%{count} Dimension",
+        "one": "Dimension",
         "other": "%{count} Dimensions"
       },
       "Edge": {
-        "one": "%{count} Edge",
+        "one": "Edge",
         "other": "%{count} Edges"
       },
       "Face": {
-        "one": "%{count} Face",
+        "one": "Face",
         "other": "%{count} Faces"
       },
       "Group": {
-        "one": "%{count} Group",
+        "one": "Group",
         "other": "%{count} Groups"
       },
       "Image": {
-        "one": "%{count} Image",
+        "one": "Image",
         "other": "%{count} Images"
       },
       "Text": {
-        "one": "%{count} Text",
+        "one": "Text",
         "other": "%{count} Texts"
       },
       "SectionPlane": {
-        "one": "%{count} Section Plane",
+        "one": "Section Plane",
         "other": "%{count} Section Planes"
       }
     },
