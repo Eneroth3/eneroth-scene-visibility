@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 module Eneroth
   module SceneVisibility
+    # @private
     module Observers
       def self.observe_model(model)
         @selection_observer ||= SelectionObserver.new

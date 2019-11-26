@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Eneroth
   module SceneVisibility
     Sketchup.require "#{PLUGIN_ROOT}/visibility"
@@ -8,7 +10,7 @@ module Eneroth
     module Interface
       # Show dialog.
       def self.show
-        if @dialog && @dialog.visible?
+        if visible?
           @dialog.bring_to_front
         else
           create_dialog unless @dialog
@@ -30,7 +32,7 @@ module Eneroth
       #
       # @return [Boolean]
       def self.visible?
-        @dialog && @dialog.visible?
+        @dialog&.visible?
       end
 
       # Toggle visibility of dialog.
@@ -66,6 +68,7 @@ module Eneroth
           Visibility.apply_visibility(selection.to_a, [scene], state)
         end
       end
+      private_class_method :attach_callbacks
 
       def self.create_dialog
         @dialog = UI::HtmlDialog.new(
@@ -79,6 +82,7 @@ module Eneroth
           top:             100
         )
       end
+      private_class_method :create_dialog
 
       def self.update_dialog
         model = Sketchup.active_model
@@ -94,6 +98,7 @@ module Eneroth
           "update();"
         )
       end
+      private_class_method :update_dialog
     end
   end
 end

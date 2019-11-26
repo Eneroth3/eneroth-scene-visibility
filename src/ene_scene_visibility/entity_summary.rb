@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 module Eneroth
   module SceneVisibility
+    # Summarize entities, like Entity Info does.
     module EntitySummary
       # Summarize what entities are, similar to what Entity Info does.
       #
@@ -20,7 +23,7 @@ module Eneroth
           OB["entity_summary.curve"]
         elsif classes.size == 1
           OB["entity_summary.#{class_name}", count: entities.size]
-        elsif entities.size == 0
+        elsif entities.empty?
           OB["entity_summary.no_selection"]
         else
           OB["entity_summary.entities", count: entities.size]

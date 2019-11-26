@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 module Eneroth
   module SceneVisibility
+    # Control entity visibility on a per scene basis.
     module Visibility
       # Check if entities are shown or hidden in scenes.
       #

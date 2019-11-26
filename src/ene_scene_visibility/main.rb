@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Eneroth
   module SceneVisibility
     Sketchup.require "#{PLUGIN_ROOT}/vendor/ordbok/ordbok"
