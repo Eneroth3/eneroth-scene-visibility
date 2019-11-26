@@ -21,6 +21,7 @@
       "DimensionLinear": {
         "one": "Dimension",
         "other": "%{count} dimensioner"
+      },
       "DimensionRadial": {
         "one": "Dimension",
         "other": "%{count} dimensioner"
