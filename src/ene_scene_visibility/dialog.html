@@ -19,6 +19,11 @@
       var summary;
       var sceneVisibility;
 
+      function onChange(event) {
+        index = elementIndex(this.parentNode);
+        sketchup.on_change(index, this.checked);
+      }
+
       function update() {
         var summaryElement = document.getElementById('summary');
         var listElement = document.getElementById('content');
@@ -31,11 +36,17 @@
           input.type = 'checkbox';
           if (scene[1] != null) input.checked = scene[1];
           if (scene[1] == null) input.indeterminate = true;
+          input.onchange = onChange;
           var label = document.createElement('label');
           label.appendChild(input);
           label.appendChild(document.createTextNode(scene[0]));
           listElement.appendChild(label);
         }
+      }
+
+      function elementIndex(element) {
+        siblings = Array.prototype.slice.call(element.parentNode.children);
+        return siblings.indexOf(element);
       }
     </script>
     <style>
