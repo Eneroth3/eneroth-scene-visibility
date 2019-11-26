@@ -12,7 +12,7 @@ module Eneroth
       #
       # @return [Boolean, nil] nil denotes values differ between scenes or
       #   entities.
-      def visible?(entities, scenes)
+      def self.visible?(entities, scenes)
         # Hidden contains duplicates if the same entity is hidden in multiple
         # scenes.
         hidden = scenes.flat_map(&:hidden_entities)
@@ -27,7 +27,7 @@ module Eneroth
       # @param entities [Array<Sketchup::DrawingElement>, Sketchup::Selection]
       # @param scenes [Array<Sketchup::Page>], Sketchup::Pages]
       # @param state [Boolean]
-      def apply_visibility(entities, scenes, state)
+      def self.apply_visibility(entities, scenes, state)
         # Not yet implemented.
         # https://github.com/SketchUp/api-issue-tracker/issues/376
         entities.each { |e| scenes.each { |s| s.set_visibility(e, state) } }

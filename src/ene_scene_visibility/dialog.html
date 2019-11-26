@@ -20,6 +20,17 @@
       function set_summary(summary) {
         document.getElementById('summary').innerHTML = summary;
       }
+
+      function set_content(scenes) {
+        // TODO: Create objects properly, not using innerHTML.
+        // Set indeterminate state properly.
+        // TODO: Hide content if selection is empty.
+        html = '';
+        for (const scene of scenes){
+          html += '<label><input type="checkbox" checked>' + scene[0] + '</label>';
+        }
+        document.getElementById('content').innerHTML = html;
+      }
     </script>
     <style>
       label { display: block; }
@@ -33,7 +44,7 @@
     <div class="dlg-content-area label" id="summary">
       1 Group
     </div>
-    <div class="dlg-content-area">
+    <div class="dlg-content-area" id="content">
       <label><input type="checkbox" checked> Drawing</label>
       <label><input type="checkbox"> Section A</label>
       <label><input type="checkbox"> Section B</label>

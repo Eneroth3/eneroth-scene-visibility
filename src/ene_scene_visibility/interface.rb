@@ -79,10 +79,19 @@ module Eneroth
       end
 
       def self.update_dialog
-        summary = EntitySummary.summary(Sketchup.active_model.selection)
-        js = "set_summary('#{CGI.escapeHTML(summary)}');"
-        @dialog.execute_script(js)
-        # TODO: Set content.
+        model = Sketchup.active_model
+        summary = EntitySummary.summary(model.selection)
+
+        content = model.pages.map do |scene|
+          visibility = Visibility.visible?(model.selection, [scene])
+
+          [CGI.escapeHTML(scene.name), visibility]
+        end
+
+        @dialog.execute_script(
+          "set_summary('#{CGI.escapeHTML(summary)}');"\
+          "set_content(#{content.to_json})"
+        )
       end
     end
   end
