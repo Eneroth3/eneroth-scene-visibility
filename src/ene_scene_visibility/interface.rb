@@ -4,6 +4,7 @@ module Eneroth
   module SceneVisibility
     Sketchup.require "#{PLUGIN_ROOT}/visibility"
     Sketchup.require "#{PLUGIN_ROOT}/entity_summary"
+    Sketchup.require "#{PLUGIN_ROOT}/observers"
 
     # User interface for controlling entity visibility on a per scene basis.
     module Interface
@@ -16,6 +17,9 @@ module Eneroth
           @dialog.set_url("#{PLUGIN_ROOT}/dialog.html")
           attach_callbacks
           @dialog.show
+
+          Observers.observe_app
+          @dialog.set_on_closed { Observers.unobserve_app }
         end
       end
 
@@ -44,14 +48,13 @@ module Eneroth
       end
 
       # Excepted to be called when selection changes.
-      def on_selection_change
-        # TODO: Invoke.
+      def self.on_selection_change
         update_dialog
       end
 
       # Excepted to be called when scenes are added, removed or renamed.
-      def on_scenes_change
-        # TODO: Invoke.
+      def self.on_scenes_change
+        # Called multiple times on some scene events.
         update_dialog
       end
 
