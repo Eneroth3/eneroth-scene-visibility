@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TITLE</title>
+    <script src="vendor/dialogs/jquery-1.12.4.js"></script>
+    <script src="vendor/dialogs/controls.js"></script>
+    <link rel="stylesheet" type="text/css" href="vendor/dialogs/style.css">
+    <script>
+      // Disable context menu.
+      // TODO: Enable disable.
+      // window.oncontextmenu = function (e) { e.preventDefault() };
+
+      window.onerror = function(message, source, lineno, colno, error) {
+        alert("source:" + lineno + ":" + colno + "\n\n" + message);
+      };
+
+      window.onload = function() { sketchup.ready(); };
+
+      function set_summary(summary) {
+        document.getElementById('summary').innerHTML = summary;
+      }
+    </script>
+    <style>
+      label { display: block; }
+      .label {
+        flex: 0;
+        flex-basis: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dlg-content-area label" id="summary">
+      1 Group
+    </div>
+    <div class="dlg-content-area">
+      <label><input type="checkbox" checked> Drawing</label>
+      <label><input type="checkbox"> Section A</label>
+      <label><input type="checkbox"> Section B</label>
+      <label><input type="checkbox" indeterminate> Plan 1</label>
+      <label><input type="checkbox" indeterminate> Plan 2</label>
+      <label><input type="checkbox" checked> Perspective 2</label>
+    </div>
+  </body>
+</html>

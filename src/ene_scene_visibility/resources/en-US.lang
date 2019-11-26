@@ -1,0 +1,53 @@
+{
+  "name": {"native":"English"},
+  "dictionary": {
+    "entity_summary": {
+      "group_component": "%{count} Groups/Components",
+      "entities": "%{count} Entities",
+      "curve": "1 Curve",
+      "no_selection": "No Selection",
+      "ComponentInstance": {
+        "one": "%{count} Component",
+        "other": "%{count} Components"
+      },
+      "ConstructionLine": {
+        "one": "%{count} Guide",
+        "other": "%{count} Guides"
+      },
+      "ConstructionPoint": {
+        "one": "%{count} Guide Point",
+        "other": "%{count} Guide Points"
+      },
+      "Dimension": {
+        "one": "%{count} Dimension",
+        "other": "%{count} Dimensions"
+      },
+      "Edge": {
+        "one": "%{count} Edge",
+        "other": "%{count} Edges"
+      },
+      "Face": {
+        "one": "%{count} Face",
+        "other": "%{count} Faces"
+      },
+      "Group": {
+        "one": "%{count} Group",
+        "other": "%{count} Groups"
+      },
+      "Image": {
+        "one": "%{count} Image",
+        "other": "%{count} Images"
+      },
+      "Text": {
+        "one": "%{count} Text",
+        "other": "%{count} Texts"
+      },
+      "SectionPlane": {
+        "one": "%{count} Section Plane",
+        "other": "%{count} Section Planes"
+      }
+    },
+    "lang_option": "Language",
+    "system_lang_name": "System Default"
+  }
+}
