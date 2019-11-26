@@ -1,5 +1,3 @@
-require "cgi"
-
 module Eneroth
   module SceneVisibility
     Sketchup.require "#{PLUGIN_ROOT}/visibility"
@@ -81,16 +79,15 @@ module Eneroth
       def self.update_dialog
         model = Sketchup.active_model
         summary = EntitySummary.summary(model.selection)
-
-        content = model.pages.map do |scene|
-          visibility = Visibility.visible?(model.selection, [scene])
-
-          [CGI.escapeHTML(scene.name), visibility]
+        scene_visibility = model.pages.map do |scene|
+          [scene.name, Visibility.visible?(model.selection, [scene])]
         end
 
         @dialog.execute_script(
-          "set_summary('#{CGI.escapeHTML(summary)}');"\
-          "set_content(#{content.to_json})"
+          "emptySelection = #{model.selection.empty?};"\
+          "summary = #{summary.inspect};"\
+          "sceneVisibility = #{scene_visibility.to_json};"\
+          "update();"
         )
       end
     end
