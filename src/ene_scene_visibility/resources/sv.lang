@@ -1,0 +1,53 @@
+{
+  "name": {"native":"Svenska"},
+  "dictionary": {
+    "entity_summary": {
+      "group_component": "%{count} grupper/komponenter",
+      "entities": "%{count} element",
+      "curve": "Kurva",
+      "no_selection": "Ingen markering",
+      "ComponentInstance": {
+        "one": "Komponent",
+        "other": "%{count} komponenter"
+      },
+      "ConstructionLine": {
+        "one": "Stödlinje",
+        "other": "%{count} stödlinjer"
+      },
+      "ConstructionPoint": {
+        "one": "Stödpunkt",
+        "other": "%{count} stödpunkter"
+      },
+      "Dimension": {
+        "one": "Dimension",
+        "other": "%{count} dimensioner"
+      },
+      "Edge": {
+        "one": "Kant",
+        "other": "%{count} kanter"
+      },
+      "Face": {
+        "one": "Yta",
+        "other": "%{count} ytor"
+      },
+      "Group": {
+        "one": "Grupp",
+        "other": "Grupper"
+      },
+      "Image": {
+        "one": "Bild",
+        "other": "%{count} bilder"
+      },
+      "Text": {
+        "one": "%Text",
+        "other": "%{count} texter"
+      },
+      "SectionPlane": {
+        "one": "Sektionsplan",
+        "other": "%{count} sektionsplan"
+      }
+    },
+    "lang_option": "Språk",
+    "system_lang_name": "Systemstandard"
+  }
+}
