@@ -18,7 +18,11 @@
         "one": "Guide Point",
         "other": "%{count} Guide Points"
       },
-      "Dimension": {
+      "DimensionLinear": {
+        "one": "Dimension",
+        "other": "%{count} Dimensions"
+      },
+      "DimensionRadial": {
         "one": "Dimension",
         "other": "%{count} Dimensions"
       },
