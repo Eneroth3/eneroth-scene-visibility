@@ -32,7 +32,7 @@ module Eneroth
       #
       # @return [Boolean]
       def self.visible?
-        @dialog&.visible?
+        @dialog && @dialog.visible?
       end
 
       # Toggle visibility of dialog.
