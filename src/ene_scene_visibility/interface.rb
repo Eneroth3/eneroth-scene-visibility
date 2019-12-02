@@ -89,7 +89,7 @@ module Eneroth
       def self.update_dialog
         model = Sketchup.active_model
         summary = EntitySummary.summary(model.selection)
-        scene_visibility = model.pages.map do |scene|
+        scene_visibility = model.pages.select(&:use_hidden?).map do |scene|
           [scene.name, Visibility.visible?(model.selection, [scene])]
         end
 
