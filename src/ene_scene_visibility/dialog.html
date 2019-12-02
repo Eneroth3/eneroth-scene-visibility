@@ -19,8 +19,7 @@
       var sceneVisibility;
 
       function onChange(event) {
-        index = elementIndex(this.parentNode);
-        sketchup.on_change(index, this.checked);
+        sketchup.on_change(this.value, this.checked);
       }
 
       function update() {
@@ -33,6 +32,7 @@
         for (const scene of sceneVisibility){
           var input = document.createElement('input');
           input.type = 'checkbox';
+          input.value = scene[0];
           if (scene[1] != null) input.checked = scene[1];
           if (scene[1] == null) input.indeterminate = true;
           input.onchange = onChange;
@@ -41,11 +41,6 @@
           label.appendChild(document.createTextNode(scene[0]));
           listElement.appendChild(label);
         }
-      }
-
-      function elementIndex(element) {
-        siblings = Array.prototype.slice.call(element.parentNode.children);
-        return siblings.indexOf(element);
       }
     </script>
     <style>
@@ -62,11 +57,11 @@
     </div>
     <div class="dlg-content-area" id="content">
       <!--<label><input type="checkbox" checked> Drawing</label>
-      <label><input type="checkbox"> Section A</label>
-      <label><input type="checkbox"> Section B</label>
-      <label><input type="checkbox" indeterminate> Plan 1</label>
-      <label><input type="checkbox" indeterminate> Plan 2</label>
-      <label><input type="checkbox" checked> Perspective 2</label>-->
+      <label><input type="checkbox" value="Section A"> Section A</label>
+      <label><input type="checkbox" value="Section BS"> Section B</label>
+      <label><input type="checkbox" value="Plan 1" indeterminate> Plan 1</label>
+      <label><input type="checkbox" value="Plan 2" indeterminate> Plan 2</label>
+      <label><input type="checkbox" value="Perspective 2" checked> Perspective 2</label>-->
     </div>
   </body>
 </html>

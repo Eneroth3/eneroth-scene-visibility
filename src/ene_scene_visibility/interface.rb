@@ -62,9 +62,9 @@ module Eneroth
 
       def self.attach_callbacks
         @dialog.add_action_callback("ready") { update_dialog }
-        @dialog.add_action_callback("on_change") do |_, index, state|
+        @dialog.add_action_callback("on_change") do |_, name, state|
           selection = Sketchup.active_model.selection
-          scene = Sketchup.active_model.pages[index]
+          scene = Sketchup.active_model.pages[name]
           Visibility.apply_visibility(selection.to_a, [scene], state)
         end
       end
