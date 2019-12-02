@@ -78,6 +78,8 @@ module Eneroth
           style:           UI::HtmlDialog::STYLE_DIALOG,
           width:           180,
           height:          250,
+          min_width:       150,
+          min_height:      200,
           left:            200,
           top:             100
         )
