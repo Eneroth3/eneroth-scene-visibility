@@ -31,9 +31,9 @@ module Eneroth
       # @param scenes [Array<Sketchup::Page>], Sketchup::Pages]
       # @param state [Boolean]
       def self.apply_visibility(entities, scenes, state)
-        # Not yet implemented.
-        # https://github.com/SketchUp/api-issue-tracker/issues/376
-        entities.each { |e| scenes.each { |s| s.set_visibility(e, state) } }
+        entities.each do |e|
+          scenes.each { |s| s.set_drawingelement_visibility(e, state) }
+        end
       end
     end
   end
