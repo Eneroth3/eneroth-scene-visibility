@@ -17,6 +17,7 @@
       var emptySelection;
       var summary;
       var sceneVisibility;
+      var noScenesMessage;
 
       function onChange(event) {
         sketchup.on_change(this.value, this.checked);
@@ -40,6 +41,12 @@
           label.appendChild(input);
           label.appendChild(document.createTextNode(scene[0]));
           listElement.appendChild(label);
+        }
+        if (sceneVisibility.length == 0) {
+          var noScenes = document.createElement('div');
+          noScenes.class = 'noScenesMessage';
+          noScenes.appendChild(document.createTextNode(noScenesMessage));
+          listElement.appendChild(noScenes);
         }
       }
     </script>

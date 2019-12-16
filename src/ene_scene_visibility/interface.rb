@@ -97,6 +97,7 @@ module Eneroth
           "emptySelection = #{model.selection.empty?};"\
           "summary = #{summary.inspect};"\
           "sceneVisibility = #{scene_visibility.to_json};"\
+          "noScenesMessage = #{OB[:no_scenes].inspect};"\
           "update();"
         )
       end
