@@ -32,11 +32,27 @@ module Eneroth
       nil
     end
 
+    # Get icon file extension based on SketchUp version and platform.
+    #
+    # @return [String]
+    def self.extension
+      if Sketchup.version.to_i < 16
+        ".png"
+      elsif Sketchup.platform == :platform_win
+        ".svg"
+      else
+        ".pdf"
+      end
+    end
+
     unless @loaded
       @loaded = true
 
       cmd = UI::Command.new(EXTENSION.name) { Interface.toggle }
       cmd.set_validation_proc { Interface.command_state }
+      cmd.tooltip = EXTENSION.name
+      cmd.status_bar_text = EXTENSION.description
+      cmd.large_icon = cmd.small_icon = "#{PLUGIN_ROOT}/images/icon#{extension}"
 
       UI.add_context_menu_handler do |context_menu|
         context_menu.add_separator
@@ -50,6 +66,10 @@ module Eneroth
         menu.add_submenu(OB[:lang_option]),
         system_lang_name: OB[:system_lang_name]
       )
+
+      toolbar = UI::Toolbar.new(EXTENSION.name)
+      toolbar.add_item(cmd)
+      toolbar.show
     end
   end
 end
