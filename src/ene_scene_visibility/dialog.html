@@ -44,7 +44,7 @@
         }
         if (sceneVisibility.length == 0) {
           var noScenes = document.createElement('div');
-          noScenes.class = 'noScenesMessage';
+          noScenes.className = 'noScenesMessage';
           noScenes.appendChild(document.createTextNode(noScenesMessage));
           listElement.appendChild(noScenes);
         }
@@ -55,6 +55,10 @@
       .label {
         flex: 0;
         flex-basis: auto;
+      }
+      .noScenesMessage {
+        font-style: italic;
+        opacity: 0.6;
       }
     </style>
   </head>

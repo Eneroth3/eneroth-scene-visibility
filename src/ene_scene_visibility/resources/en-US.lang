@@ -51,7 +51,7 @@
         "other": "%{count} Section Planes"
       }
     },
-    "no_scenes": "No Scenes",
+    "no_scenes": "No Scenes in Model",
     "lang_option": "Language",
     "system_lang_name": "System Default"
   }

@@ -75,7 +75,7 @@ module Eneroth
           dialog_title:    EXTENSION.name,
           preferences_key: name, # Full module name
           resizable:       true,
-          style:           UI::HtmlDialog::STYLE_DIALOG,
+          style:           UI::HtmlDialog::STYLE_UTILITY,
           width:           180,
           height:          250,
           min_width:       150,

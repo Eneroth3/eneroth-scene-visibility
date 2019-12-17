@@ -51,7 +51,7 @@
         "other": "%{count} sektionsplan"
       }
     },
-    "no_scenes": "Inga scener",
+    "no_scenes": "Inga scener i modellen",
     "lang_option": "Språk",
     "system_lang_name": "Systemstandard"
   }
