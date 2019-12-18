@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="Icon2.svg">
+   sodipodi:docname="Icon.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,10 +26,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.313709"
-     inkscape:cx="27.493792"
+     inkscape:cx="13.130686"
      inkscape:cy="21.689522"
      inkscape:document-units="px"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer5"
      showgrid="true"
      units="px"
      inkscape:pagecheckerboard="false"
@@ -103,7 +103,7 @@
      id="layer5"
      inkscape:label="Cube">
     <g
-       transform="matrix(1.25,0,0,-1.25,-4.9995188,32)"
+       transform="matrix(1.25,0,0,-1.25,-2.9995188,32)"
        id="g4238-3">
       <path
          inkscape:connector-curvature="0"
