@@ -76,10 +76,10 @@ module Eneroth
           preferences_key: name, # Full module name
           resizable:       true,
           style:           UI::HtmlDialog::STYLE_UTILITY,
-          width:           180,
-          height:          250,
-          min_width:       150,
-          min_height:      200,
+          width:           225,
+          height:          315,
+          min_width:       180,
+          min_height:      250,
           left:            200,
           top:             100
         )
