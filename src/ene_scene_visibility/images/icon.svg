@@ -25,10 +25,73 @@
     </rdf:RDF>
   </metadata>
   <g
+     style="display:inline"
+     id="layer2">
+    <rect
+       y="11.4"
+       x="5.5999966"
+       height="14"
+       width="21"
+       id="rect967"
+       style="opacity:1;fill:#666666;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.92113239;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       id="path984-1"
+       d="M 7.5999967,15.4 9.5999967,11.4 H 12.599997 L 10.599997,15.4 H 7.5999967"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path984-7-6"
+       d="M 13.599997,15.4 15.599997,11.4 H 18.599997 L 16.599997,15.4 H 13.599997"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path984-2-7"
+       d="M 19.599997,15.4 21.599997,11.4 H 24.599997 L 22.599997,15.4 H 19.599997"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <g
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       transform="rotate(-10,13.801034,12.98603)"
+       id="g1037">
+      <rect
+         style="opacity:1;fill:#666666;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect967-9"
+         width="21"
+         height="4"
+         x="6"
+         y="-10"
+         transform="scale(1,-1)" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 8,6 10,10 H 13 L 11,6 H 8"
+         id="path984" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 14,6 16,10 H 19 L 17,6 H 14"
+         id="path984-7" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 20,6 22,10 H 25 L 23,6 H 20"
+         id="path984-2" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect1028"
+         width="21"
+         height="4"
+         x="6"
+         y="6" />
+    </g>
+    <rect
+       y="11.4"
+       x="5.5999966"
+       height="14"
+       width="21"
+       id="rect1030"
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  </g>
+  <g
+     style="display:inline"
      id="layer5">
     <g
        id="g4238-3"
-       transform="matrix(1.25,0,0,-1.25,-2.9995188,32)">
+       transform="matrix(0.9,0,0,-0.9,8.193326,33.75827)">
       <path
          d="M 7.1720419,19.025163 12.596915,10.740023 12.695023,5.8402464 8.1535099,13.194553 Z"
          style="fill:#646455;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-linecap:round;stroke-linejoin:round"
@@ -77,57 +140,6 @@
          d="M 12.596915,10.740023 22.554111,15.753318"
          style="fill:none;stroke:#000000;stroke-width:0.40000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
          id="path66-3" />
-    </g>
-  </g>
-  <g
-     id="layer1">
-    <rect
-       y="17"
-       x="13"
-       height="11"
-       width="15"
-       id="rect1040"
-       style="display:inline;opacity:1;fill:#303030;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.47871354;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <rect
-       y="17"
-       x="22"
-       height="3"
-       width="3"
-       id="rect1044-5-9"
-       style="display:inline;opacity:1;fill:#fef8f8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.75;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <rect
-       y="17"
-       x="16"
-       height="3"
-       width="3"
-       id="rect1044-5-9-7"
-       style="display:inline;opacity:1;fill:#fef8f8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.75;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <g
-       transform="rotate(20,25.164359,16.5)"
-       id="g911"
-       style="display:inline">
-      <rect
-         style="opacity:1;fill:#303030;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect1040-1"
-         width="15"
-         height="3"
-         x="13"
-         y="-16"
-         transform="scale(1,-1)" />
-      <rect
-         style="opacity:1;fill:#fef8f8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.75;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect1044-5-9-9"
-         width="3"
-         height="3"
-         x="22"
-         y="13" />
-      <rect
-         style="opacity:1;fill:#fef8f8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.75;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect1044-5-9-7-9"
-         width="3"
-         height="3"
-         x="16"
-         y="13" />
     </g>
   </g>
 </svg>
