@@ -8,3 +8,7 @@ later where scenes store hidden states also in nested objects.
 Activated from **Context Menu > Eneroth Scene Visibility** or toolbar.
 
 Source code available at [GitHub](https://github.com/Eneroth3/eneroth-scene-visibility).
+
+Please note that SketchUp only officially supports scene entity visibility Objects,
+not Geometry, when inside of a group or component. Using this extension to hide
+Geometry inside of groups and components may produce unexpected results.
