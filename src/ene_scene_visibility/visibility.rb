@@ -25,6 +25,17 @@ module Eneroth
         return true if intersection.empty?
       end
 
+      # Generate a matrix of visibility states by entity and scene.
+      #
+      # @param entities [Array<Sketchup::Entity]
+      # @param scenes [Array<Sketchup::Page>]
+      #
+      # @return [Array<Array<Boolean>>]
+      #   Entity index, Scene index -> Visibility state
+      def self.visibility_matrix(entities, scenes)
+        entities.map { |e| scenes.map { |s| !s.hidden_entities.include?(e) } }
+      end
+
       # Apply visibility state to entities on a scene basis.
       #
       # @param entities [Array<Sketchup::DrawingElement>, Sketchup::Selection]
