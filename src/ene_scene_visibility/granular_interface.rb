@@ -61,12 +61,15 @@ module Eneroth
       # Y axis (first cell)
       html += "<tr><td>#{EntityHelper.display_name(entity) }</td>"
       
-      matrix[i].each { |v| html += "<td>#{v ? 'X' : ''}</td>"}
+      matrix[i].each do |v|
+        html += "<td>"
+        html += "<input type=\"checkbox\" disabled #{v ? 'checked' : ''}/></td>"
+      end
       html += "</tr>"
     end
     html += "</table>"
 
-    @dialog = UI::HtmlDialog.new
+    @dialog = UI::HtmlDialog.new(preferences_key: name)
     @dialog.set_html(html)
     @dialog.show
   end
