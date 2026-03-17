@@ -95,9 +95,9 @@ module Eneroth
 
         @dialog.execute_script(
           "emptySelection = #{model.selection.empty?};"\
-          "summary = #{summary.inspect};"\
+          "summary = #{summary.to_json};"\
           "sceneVisibility = #{scene_visibility.to_json};"\
-          "noScenesMessage = #{OB[:no_scenes].inspect};"\
+          "noScenesMessage = #{OB[:no_scenes].to_json};"\
           "update();"
         )
       end

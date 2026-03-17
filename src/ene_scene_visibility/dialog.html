@@ -27,8 +27,8 @@
         var summaryElement = document.getElementById('summary');
         var listElement = document.getElementById('content');
 
-        summaryElement.innerHTML = summary;
-        listElement.innerHTML = '';
+        summaryElement.textContent = summary;
+        listElement.textContent = '';
         if (emptySelection) return;
         for (const scene of sceneVisibility){
           var input = document.createElement('input');
