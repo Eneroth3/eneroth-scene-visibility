@@ -19,10 +19,10 @@ module Eneroth
       File.join(PLUGIN_ROOT, "main")
     )
 
-    EXTENSION.creator     = "Eneroth"
+    EXTENSION.creator     = "Christina Eneroth"
     EXTENSION.description = "Control entity visibility on a per scene basis."
-    EXTENSION.version     = "1.0.2"
-    EXTENSION.copyright   = "2020, #{EXTENSION.creator}"
+    EXTENSION.version     = "1.0.3"
+    EXTENSION.copyright   = "Copyright 2019-2026, Christina Eneroth"
     Sketchup.register_extension(EXTENSION, true)
   end
 end
